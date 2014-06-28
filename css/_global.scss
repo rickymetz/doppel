@@ -12,82 +12,81 @@ body{
 	@extend %sans;
 }
 
-header{
-	background-color: $main-color;
+.headsup{
 	width: 100%;
 	top: 0;
-	height: 8em;
-	border-bottom: 4px solid $secondary-color;
+	height: 15em;
 	z-index: 1;
 	display:flex;
 	align-items: center;
-	justify-content: center;
-	a{
+	flex-direction: column;	
+	justify-content: space-between;
+}
 
-		@extend %serif;
-		text-decoration: none;
-		color: white;
-		font-size: 1.25em;
-		text-align: center;
-		&:hover{
-			color: $secondary-color;
-		}
+.doppel-tomgatchi{
+	height: 11em;
+	width: 100%;
+	background-color: $main-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.doppel-image-container{
+	background-color: $background-color;
+	border-radius: 50%;
+	border: 5px solid $tertiary-color;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;	
+	justify-content: center;
+}
+
+.doppel-image{
+	display: flex;
+	align-items: center;
+	flex-direction: column;	
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	& img{
+		width: 75%;
+	}
+}
+
+.doppel-info{
+	background-color: $main-dark;
+	color: $background-color;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	min-height: 4em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	& span{
+		color: $tertiary-color;
 	}
 }
 
 .container{ 
-	margin: 6em auto;	
-}
-
-.play, .pause{
-	color: white;
-	position: absolute;
-	@include align(h);
-	top: 4em;
-	height: 4em;
-}
-.post{
-	max-width:40em;
-	width:90%;
-	margin: 6em auto;	
-	background-color: white;
-	position:relative;
-	box-shadow: 0 4px $tertiary-color;
-}
-
-.post-content{
+	margin: 2em auto;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
 }
 
-
-
-.top-piece{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	background: $main-color;
-	min-height: 10em;
-	h2{
-		padding: 1em;
-		color: white;
-		text-align: center;
-		line-height: 1.25em;
-	}
+.category-container{
+	max-width:90%;
+	margin: 0 auto;
+	background-color: $secondary-color;
+	color: $main-color;
 }
 
-
-.listendate{
-	padding: 2em 2em 1em;
-}
-
-.tags{
-	padding: 1em 2em 2em;
-}
-
-ul.listendate{
-	padding: none;
+ul.category-name{
+	max-width: 90%;
+	margin: 0 auto;
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
@@ -99,27 +98,3 @@ ul.listendate{
 	}
 }
 
-ul.tags{
-	padding: none;
-	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
-	align-content: flex-start;
-	flex-wrap: wrap;
-	& li{
-		padding: 0.25em;
-		color: $tertiary-color;
-		display:inline;
-		&::before
-			{ content:"#";
-		}
-		&:first-child{
-			padding-left:0;
-		}
-		&:last-child{
-			padding-right:0;
-		}
-	}
-
-
-}

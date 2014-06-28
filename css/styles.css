@@ -15,7 +15,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:700italic);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,13 +74,13 @@ table {
 
 /* colors */
 /* typography */
-h1, h2, h3, h4, h5, h6, header a {
-  font-family: 'Droid Serif', serif;
-  font-style: italic;
-  font-weight: bold; }
-
-p, body {
-  font-family: 'Droid Sans', sans-serif; }
+/*%serif{
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	font-weight: bold;
+}*/
+h1, h2, h3, h4, h5, h6, p, body {
+  font-family: 'Varela Round', sans-serif; }
 
 h1 {
   font-size: 1.86111em; }
@@ -110,104 +110,80 @@ html {
   -o-padding-start: 0; }
 
 body {
-  color: #270c32;
-  background-color: #e8e8e8;
+  color: #686055;
+  background-color: #fffbf0;
   margin: 0; }
 
-header {
-  background-color: #270c32;
+.headsup {
   width: 100%;
   top: 0;
-  height: 8em;
-  border-bottom: 4px solid #e0745e;
+  height: 15em;
   z-index: 1;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.doppel-tomgatchi {
+  height: 11em;
+  width: 100%;
+  background-color: #686055;
+  display: flex;
+  align-items: center;
   justify-content: center; }
-  header a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.25em;
-    text-align: center; }
-    header a:hover {
-      color: #e0745e; }
+
+.doppel-image-container {
+  background-color: #fffbf0;
+  border-radius: 50%;
+  border: 5px solid #f59431;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+.doppel-image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+  .doppel-image img {
+    width: 75%; }
+
+.doppel-info {
+  background-color: #4e483f;
+  color: #fffbf0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .doppel-info span {
+    color: #f59431; }
 
 .container {
-  margin: 6em auto; }
-
-.play, .pause {
-  color: white;
-  position: absolute;
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 4em;
-  height: 4em; }
-
-.post {
-  max-width: 40em;
-  width: 90%;
-  margin: 6em auto;
-  background-color: white;
-  position: relative;
-  box-shadow: 0 4px #aeaeae; }
-
-.post-content {
+  margin: 2em auto;
   display: flex;
   flex-direction: column; }
 
-.top-piece {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: #270c32;
-  min-height: 10em; }
-  .top-piece h2 {
-    padding: 1em;
-    color: white;
-    text-align: center;
-    line-height: 1.25em; }
+.category-container {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #84cccc;
+  color: #686055; }
 
-.listendate {
-  padding: 2em 2em 1em; }
-
-.tags {
-  padding: 1em 2em 2em; }
-
-ul.listendate {
-  padding: none;
+ul.category-name {
+  max-width: 90%;
+  margin: 0 auto;
   list-style-type: none;
   display: flex;
   justify-content: space-between; }
-  ul.listendate li {
+  ul.category-name li {
     display: inline; }
-    ul.listendate li span {
+    ul.category-name li span {
       font-weight: bold; }
-
-ul.tags {
-  padding: none;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  flex-wrap: wrap; }
-  ul.tags li {
-    padding: 0.25em;
-    color: #aeaeae;
-    display: inline; }
-    ul.tags li::before {
-      content: "#"; }
-    ul.tags li:first-child {
-      padding-left: 0; }
-    ul.tags li:last-child {
-      padding-right: 0; }
