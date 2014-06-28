@@ -15,7 +15,7 @@ body{
 .headsup{
 	width: 100%;
 	top: 0;
-	height: 15em;
+	height: 18em;
 	z-index: 1;
 	display:flex;
 	align-items: center;
@@ -24,24 +24,34 @@ body{
 }
 
 .doppel-tomgatchi{
-	height: 11em;
+	height: 14em;
 	width: 100%;
 	background-color: $main-color;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+	flex-direction: column;
+	color: $background-color;
+	& h1{
+		text-align: center;
+	}
+	& span{
+		color: $tertiary-color;
+	}
 }
 
 .doppel-image-container{
 	background-color: $background-color;
 	border-radius: 50%;
 	border: 5px solid $tertiary-color;
-	height: 100px;
-	width: 100px;
+	height: 120px;
+	width: 120px;
+	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	flex-direction: column;	
 	justify-content: center;
+	
 }
 
 .doppel-image{
@@ -77,24 +87,52 @@ body{
 	flex-direction: column;	
 }
 
+.post{
+	margin-top: 2em;
+	&:first-child{
+		margin-top: 0;
+	}
+}
+
 .category-container{
 	max-width:90%;
 	margin: 0 auto;
 	background-color: $secondary-color;
 	color: $main-color;
+	height: 5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 0.75em 0;
 }
 
-ul.category-name{
-	max-width: 90%;
+.category-name{
+	width: 95%;
 	margin: 0 auto;
-	list-style-type: none;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	& li{
-		display:inline;
-		& span{
-			font-weight: bold;
-		}
-	}
+	flex-direction: row;
+}
+
+.percentage::after
+{ 
+content:"+";
+color: $background-color;
+margin-left: 0.75em;
+font-size: 1em;
+}
+
+.category-progress-container{
+	height: 1em;
+	width: 95%;
+	background-color: $background-color;
+}
+
+.category-progress{
+	height: 1em;
+	width: 90%;
+	background-color: $secondary-dark;
 }
 
