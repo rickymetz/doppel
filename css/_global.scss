@@ -16,33 +16,21 @@ header{
 	background-color: $main-color;
 	width: 100%;
 	top: 0;
-	height: 4em;
+	height: 8em;
 	border-bottom: 4px solid $secondary-color;
 	z-index: 1;
-	& ul{
-		list-style-type: none;
-		margin: 1.5em auto 0;
-		padding: 0;
-		max-width: 40em;
-		width:90%;
-		display: flex;
-		justify-content: space-around;
-		& li{
-			display:inline;
-			& a{
-				@extend %serif;
-				text-decoration: none;
-				color: white;
-				font-size: 1.25em;
-				text-align: center;
-				&:hover{
-					color: $secondary-color;
-				}
-				& img{
-					height: 2em;
-					margin-top: -0.5em;
-				}
-			}
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	a{
+
+		@extend %serif;
+		text-decoration: none;
+		color: white;
+		font-size: 1.25em;
+		text-align: center;
+		&:hover{
+			color: $secondary-color;
 		}
 	}
 }

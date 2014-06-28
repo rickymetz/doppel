@@ -74,7 +74,7 @@ table {
 
 /* colors */
 /* typography */
-h1, h2, h3, h4, h5, h6, header ul li a {
+h1, h2, h3, h4, h5, h6, header a {
   font-family: 'Droid Serif', serif;
   font-style: italic;
   font-weight: bold; }
@@ -118,29 +118,19 @@ header {
   background-color: #270c32;
   width: 100%;
   top: 0;
-  height: 4em;
+  height: 8em;
   border-bottom: 4px solid #e0745e;
-  z-index: 1; }
-  header ul {
-    list-style-type: none;
-    margin: 1.5em auto 0;
-    padding: 0;
-    max-width: 40em;
-    width: 90%;
-    display: flex;
-    justify-content: space-around; }
-    header ul li {
-      display: inline; }
-      header ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.25em;
-        text-align: center; }
-        header ul li a:hover {
-          color: #e0745e; }
-        header ul li a img {
-          height: 2em;
-          margin-top: -0.5em; }
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    text-align: center; }
+    header a:hover {
+      color: #e0745e; }
 
 .container {
   margin: 6em auto; }
