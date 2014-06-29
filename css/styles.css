@@ -86,6 +86,9 @@ table {
   -webkit-transform: scale(1.05);
   transform: scale(1.05); }
 
+.vanish {
+  transition: all 1s; }
+
 /* colors */
 /* typography */
 /*%serif{
@@ -213,7 +216,8 @@ body {
   flex-direction: column;
   padding: 0.75em 0; }
   .category-container:hover {
-    background-color: #76b7b7; }
+    background-color: #76b7b7;
+    cursor: pointer; }
 
 .category-name {
   width: 95%;

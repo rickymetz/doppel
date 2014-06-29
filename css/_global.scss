@@ -113,6 +113,7 @@ body{
 	padding: 0.75em 0;
 	&:hover{
 		background-color: shade($secondary-color, 10%);
+		cursor: pointer;
 	}
 }
 
