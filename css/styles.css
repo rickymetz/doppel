@@ -83,8 +83,8 @@ table {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
 
 .grow:hover, .grow:focus, .grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05); }
 
 /* colors */
 /* typography */
@@ -211,7 +211,7 @@ body {
   flex-direction: column;
   padding: 0.75em 0; }
   .category-container:hover {
-    margin-bottom: 1em; }
+    background-color: #76b7b7; }
 
 .category-name {
   width: 95%;

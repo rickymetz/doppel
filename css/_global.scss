@@ -110,7 +110,7 @@ body{
 	flex-direction: column;
 	padding: 0.75em 0;
 	&:hover{
-		margin-bottom: 1em;
+		background-color: shade($secondary-color, 10%);
 	}
 }
 
