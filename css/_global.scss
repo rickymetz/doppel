@@ -61,6 +61,8 @@ body{
 	justify-content: center;
 	width: 100%;
 	height: 100%;
+	color: $main-color;
+	font-size:1.25em;
 	& img{
 		width: 75%;
 	}
@@ -131,6 +133,11 @@ margin-left: 0.75em;
 font-size: 1em;
 }
 
+.check{
+	color: $background-color;
+	font-size:2.5em;
+}
+
 .category-progress-container{
 	height: 1em;
 	width: 95%;
@@ -142,4 +149,5 @@ font-size: 1em;
 	width: 90%;
 	background-color: $secondary-dark;
 }
+
 

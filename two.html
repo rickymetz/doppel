@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+<head>
+	<title>Doppel</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+</head>
+
+<body>
+<div class="catchall">
+	<div class="headsup animated fadeIn">
+		<div class="doppel-tomgatchi">
+			<div class="doppel-image-container">
+				<div class="doppel-image">
+					<h1>90%</h1>
+				</div>
+			</div>
+			<h1><span>Health</span></h1>
+		</div>
+		<div class="doppel-info">
+			<h2>Your <span>Health</span> is in pretty good shape</h2>
+		</div>	
+	</div>		
+
+	<div class="container">
+
+		<!--Individual category type start-->
+		<div class="animated fadeInUp post">
+			<a href="two.html">
+			<div id="myelement" class="category-container grow">
+				<div class="category-name">
+					<h1 class="category task">Go for a Bike Ride</h1>
+					<h1 class="check">&#x2713;</h1>
+				</div>
+			</div>
+			</a>
+		</div>
+		<!--Individual category type end-->	
+
+	</div>
+</div>
+
+	<script src="https://rawgithub.com/WickyNilliams/headroom.js/gh-pages/assets/scripts/main.js"></script>
+
+	<script>
+// grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init(); 
+</script>
+
+<script>
+function toggle(el){
+    if(el.className!="pause")
+    {
+        el.src='img/pause.svg';
+        el.className="pause";
+    }
+    else if(el.className=="pause")
+    {
+        el.src='img/play.svg';
+        el.className="play";
+    }
+    
+    return false;
+}
+</script>
+<script src="js/min.wow.js"></script>
+<script>
+wow = new WOW(
+  {
+    boxClass:     'wow',      // default
+    animateClass: 'animated', // default
+    offset:       150         // default
+  }
+)
+ new WOW().init();
+</script>
+</body>
+
+</html>

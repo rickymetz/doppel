@@ -170,7 +170,9 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  color: #686055;
+  font-size: 1.25em; }
   .doppel-image img {
     width: 75%; }
 
@@ -226,6 +228,10 @@ body {
   color: #fffbf0;
   margin-left: 0.75em;
   font-size: 1em; }
+
+.check {
+  color: #fffbf0;
+  font-size: 2.5em; }
 
 .category-progress-container {
   height: 1em;
