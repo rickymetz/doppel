@@ -1,8 +1,12 @@
 <?php include("header.php");?>
 
-<div class="catchall">
-	<a href="/">back</a>
+<div class="catchall sub">
 	<div class="headsup animated fadeIn">
+		<nav>
+			<ul>
+				<li><a href="/">back</a></li>
+			</ul>
+		</nav>
 		<div class="doppel-tomgatchi">
 			<div class="doppel-image-container">
 				<div class="doppel-image">

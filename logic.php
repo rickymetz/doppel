@@ -73,6 +73,7 @@
 			// Applies expiry time above to all relevant cookies
 			setcookie( "intelligence", json_encode( $cookieData ), $expiry );
 			setcookie( "career", json_encode( $cookieData ), $expiry );
+			setcookie( "doppel-local-test", 'hi', $expiry );
 		// Now since we're starting, lets set a cookie as a timer to track how long the user's been playing
 			$expiry = time() + (60 * 60 * 24 * 7 * 52 * 10); // timer will run for 10 years
 			$cookieData = (object) array( "expiry" => $expiry, "timerStart" => time() );
