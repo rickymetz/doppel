@@ -4,7 +4,6 @@
 	<div class="headsup animated fadeIn">
 		<nav>
 			<ul>
-				<li><a href="/love.php">love</a></li>
 				<li><a href="/">refresh</a></li>
 			</ul>
 		</nav>

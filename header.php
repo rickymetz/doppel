@@ -7,6 +7,24 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- prefix free css -->
+	<link href="/js/prefixfree.min.js">
+	<!-- Add to homescreen -->
+
+	<?php
+	if ($_SERVER['REQUEST_URI'] == '/index.php') { ?>
+	<link rel="stylesheet" type="text/css" href="css/addtohomescreen.css">
+	<script src="js/addtohomescreen.min.js"></script>
+	<script>
+	addToHomescreen({
+	   startDelay: 5,
+   	   maxDisplayCount: 1
+	});
+	</script>
+	<?php } ?>
+	
+	<!-- html5 shiv -->
+	<script type="application/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
 
 	<link rel="icon" type="image/png" href="/doppel/apple-touch-icon.png">
 	<link rel="apple-touch-icon" href="/doppel/apple-touch-icon.png"/>
