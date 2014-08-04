@@ -24,7 +24,7 @@
 	<?php } ?>
 	
 	<!-- html5 shiv -->
-	<script type="application/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
+	<script type="application/javascript" src="js/html5shiv.js"></script>
 
 	<link rel="icon" type="image/png" href="/doppel/apple-touch-icon.png">
 	<link rel="apple-touch-icon" href="/doppel/apple-touch-icon.png"/>
